@@ -1,0 +1,13 @@
+{% block body %}
+    <h2>Verify OTP</h2>
+    <p>{{msg}}</p>
+    <form method="POST" action="{{url_for('verifyOtp')}}">
+        <label>Enter OTP</label>
+        <input type="text" name="otp" class="formdata">
+
+        <br>
+        <button type="submit">Verify</button>
+
+    </form>
+
+{% endblock %}
